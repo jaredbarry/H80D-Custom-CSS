@@ -1,0 +1,238 @@
+/* Align fullwidth header buttons on mobile */
+
+.wtrz-metadata-block .wtrz-percentage-item {
+	font-size: 9px !important;
+}
+
+.wtrz-metadata-block .wtrz-classification-item {
+	font-size: 9px !important;
+}
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container .header-content a.et_pb_button {
+  margin: 20px 15px 0px;
+  }
+
+@media only screen and (max-width: 980px) {
+ 
+.two-columns .et_pb_column {
+width: 50%!important;
+}
+ 
+.three-columns .et_pb_column {
+width: 33.33%!important;
+}
+ 
+.four-columns .et_pb_column {
+width: 25%!important;
+}
+
+}
+
+h2.woocommerce-loop-product__title {
+    min-height: 40px;
+}
+
+
+
+
+ul.products.columns-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+ul.products li.product {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link {
+    margin-bottom: auto !important;
+}
+
+
+
+
+ h2.wtrz-classification-item {
+margin: 0 auto;
+text-align: LEFT;
+font-size: 6px;
+}
+
+
+
+
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link h2, 
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+    min-height: 65px !important;
+}
+
+
+
+
+/*****************************************************/
+/******** WOO CART / CHECKOUT / ACCOUNT PAGES ********/
+/*****************************************************/
+
+/*** MAIN FORMS BACKGROUND COLOR ***/
+.woocommerce table.shop_table,
+.woocommerce form.checkout_coupon, 
+.woocommerce form.login, 
+.woocommerce form.register,
+#add_payment_method #payment, 
+.woocommerce-cart #payment, 
+.woocommerce-checkout #payment,
+#customer_details, 
+h3#order_review_heading,
+form.woocommerce-EditAccountForm.edit-account {
+	border: 0 !important; /* you can add a border if you prefer */
+	background: white; /* this is the main background color for all forms */
+}
+/*** FORM AND OTHER PADDING ***/
+#customer_details,
+form.woocommerce-EditAccountForm.edit-account,
+h3#order_review_heading {
+	padding: 30px 30px;
+}
+/*** ADJUST FORM ROUNDED EDGES ***/
+#customer_details {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.woocommerce-checkout-review-order table.shop_table {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+/*** FIELDS ON CHECKOUT, CART, ACCOUNT PAGES ***/
+.woocommerce-account input, 
+.woocommerce-checkout input,
+#order_comments.input-text {
+	background-color: whitesmoke!important;
+font-family: arial;
+	color: black !important;
+	/* not the placeholder, the text color when typed */
+	border: 0; /* optional */
+}
+
+/*** PLACEHOLDER TEXT ON ALL WOO PAGES ***/
+.woocommerce-page ::-webkit-input-placeholder {
+    color: black !important;
+}
+.woocommerce-page :-ms-input-placeholder {
+    color: black !important;
+}
+.woocommerce-page ::-moz-placeholder {
+    color: black !important;
+}
+.woocommerce-page :-moz-placeholder { /* this isn't the same as above don't delete */
+    color: red !important; 
+}
+/*** THIS COMPENSATES FOR SHIP TO DIFF ADDRESS FIELD NOT ALIGNING ***/
+h3#ship-to-different-address {
+	margin-top: -3px; 
+}
+/*** ALL WOO BUTTONS ***/
+.woocommerce button.button.alt, 
+.woocommerce-page button.button.alt,
+.woocommerce a.button, 
+.woocommerce-page a.button,
+.woocommerce button.button,
+.woocommerce-page button.button {
+	text-transform: capitalize !important;
+	background: #f5b441 !important;
+	color: #161616 !important;
+} 
+.woocommerce button.button.alt:hover, 
+.woocommerce-page button.button.alt:hover,
+.woocommerce a.button.alt:hover, 
+.woocommerce-page a.button.alt:hover,
+.woocommerce a.button:hover, 
+.woocommerce-page a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce-page button.button:hover {
+	background: #e9232a !important;
+	color: #fff !important;
+}
+/*** PAYMENT BOX ON CHECKOUT ***/
+#add_payment_method #payment div.payment_box, 
+.woocommerce-cart #payment div.payment_box, 
+.woocommerce-checkout #payment div.payment_box {
+	background-color: black;
+	color: #fff;
+}
+#add_payment_method #payment div.payment_box::before, 
+.woocommerce-cart #payment div.payment_box::before, 
+.woocommerce-checkout #payment div.payment_box::before {
+	border-bottom-color: #161616;
+}
+#add_payment_method #payment ul.payment_methods, 
+.woocommerce-cart #payment ul.payment_methods, 
+.woocommerce-checkout #payment ul.payment_methods {
+	border-bottom: 0;
+}
+/*** BORDERS AND TABLES ***/
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea {
+	border: 00;
+}
+.woocommerce table.shop_table td,
+#add_payment_method .cart-collaterals .cart_totals tr td, 
+#add_payment_method .cart-collaterals .cart_totals tr th, 
+.woocommerce-cart .cart-collaterals .cart_totals tr td, 
+.woocommerce-cart .cart-collaterals .cart_totals tr th, 
+.woocommerce-checkout .cart-collaterals .cart_totals tr td, 
+.woocommerce-checkout .cart-collaterals .cart_totals tr th,
+.woocommerce table.shop_table tbody th, 
+.woocommerce table.shop_table tfoot td, 
+.woocommerce table.shop_table tfoot th, 
+.woocommerce-checkout #main-content .cart-subtotal td {
+	border-top: 1px dashed #dfdedd;
+}
+.woocommerce table.shop_table_responsive tr:nth-child(2n) td, 
+.woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+	background: transparent;
+}
+.woocommerce-checkout #content-area table th,
+.woocommerce-checkout #content-area table td {
+	padding-left: 20px;
+}
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea {
+	font-size: 13px;
+}
+/*** EXISTING ACCOUNT / ERROR BOXES BACKGROUND COLOR ***/
+.woocommerce-message, 
+.woocommerce-error, 
+.woocommerce-info {
+	background: #b33f62 !important;
+}
+/*** ORDER NOTES ON CHECKOUT ***/
+.woocommerce-checkout .woocommerce form .form-row textarea {
+	height: 150px; /* height of optional notes box */
+}
+/*** STATE DROPDOWN SELECT COLOR ***/
+.select2-container--default .select2-results__option--highlighted[aria-selected], 
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+	background: #ffa500;
+}
+/*** QUANTITY BOX ***/
+.woocommerce #content .quantity input.qty, 
+.woocommerce .quantity input.qty, 
+.woocommerce-cart table.cart td.actions .coupon .input-text, 
+.woocommerce-page #content .quantity input.qty,
+.woocommerce-page .quantity input.qty {
+	color: #161616 !important;
+	background: #fff !important;
+	height: 46px; /* you may need to change this based on your font size */
+}
+
+
+
+
+
+
+
+.et-cart-info { display:none ! important; }
+
+
